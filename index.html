@@ -4,17 +4,18 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="http://fonts.cdnfonts.com/css/cerebri-sans" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 		<title>Manage Landing Page</title>
 	</head>
-	<body>
+	<body class="bg-greyBackground">
 		<!-- Navbar -->
-		<nav class="max-w-screen-2xl relative container w-screen mr-0 p-6 bg-yellowTheme z-1">
+		<nav class="w-screen relative p-4 pt-0 bg-yellowTheme z-1">
 		<!-- Flex container -->
 		<div class="flex items-center justify-between">
 			<!-- Logo -->
 			<div class="pt-2">
-				<h2 class="tracking-widest text-3xl text-greenTheme font-bold md:text-5xl">HABESHA CAFFE</h2>
+				<h2 class="tracking-widest text-3xl text-greenTheme font-bold md:text-3xl">HABESHA CAFFE</h2>
 			</div>
 			<!-- Menu Items -->
 			<div class="flex space-x-6">
@@ -24,12 +25,19 @@
 			</div>
 		</div>
 		</nav>
-		<section id="hero" class="text-center font-light">
-			<div class="flex flex-wrap-reverse">
-			<!-- <img class="object-scale-down z-0" src="./static/images/habesha-coffee-1.jpg"/>	 -->
-			<img class="w-screen z-0" src="./static/images/habesha-coffee-7.jpg"/>	
-			</div>
+		<section id="hero" class="text-center font-light object-cover">
+			<img class="w-screen h-200px md:h-[400px] lg:h-[600px]" src="./static/images/habesha-coffee-1.jpg"/>	
 		</section>
+		<div id="menu-overview" class="flex flex-col items-center justify-center mt-6 ">
+			<p class="italic text-sm font-light text-darkGrayishBlue">Skip to a Menu:</p>
+			<div class="flex space-x-6 font-bold">
+				<a href="#" class="text-brightRed underline decoration-solid hover:text-black">Meat Dishes</a>
+				<p> | </p>
+				<a href="#" class="text-brightRed underline decoration-solid hover:text-black">Vegan and Vegeterian Dishes</a>
+				<p> | </p>
+				<a href="#" class="text-brightRed underline decoration-solid hover:text-black">Drinks</a>
+			</div>
+		</div>
 	</body>
 	
 </html>
