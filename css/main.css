@@ -874,6 +874,26 @@ html {
     height: -400px;
   }
 
+  .md\:h-\[-350px\] {
+    height: -350px;
+  }
+
+  .md\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .md\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .md\:h-\[1000px\] {
+    height: 1000px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -887,5 +907,9 @@ html {
 @media (min-width: 976px) {
   .lg\:h-\[600px\] {
     height: 600px;
+  }
+
+  .lg\:h-\[500px\] {
+    height: 500px;
   }
 }
