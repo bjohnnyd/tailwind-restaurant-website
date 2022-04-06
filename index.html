@@ -9,21 +9,21 @@
 		<link rel="stylesheet" href="css/main.css">
 		<title>Manage Landing Page</title>
 	</head>
-	<body class="bg-greyBackground flex flex-col min-h-screen">
+	<body lass="bg-greyBackground flex flex-col min-h-screen">
 		<header>
 		<!-- Navbar -->
 		<nav class="w-screen relative pr-4 pl-4 pt-1 pb-1 bg-yellowTheme z-1">
 		<!-- Flex container -->
-		<div class="flex items-center justify-between">
+		<div class="flex items-center text-center content-center md:justify-between">
 			<!-- Logo -->
 			<div class="ml-1">
-				<h2 class="tracking-widest text-2xl text-greenTheme font-bold md:text-3xl">HABESHA CAFFE</h2>
+				<h2 class="tracking-widest text-2xl text-greenTheme font-bold md:text-3xl">HABESHA CAFFEE</h2>
 			</div>
 			<!-- Menu Items -->
-			<div class="flex space-x-6">
-				<a href="#menu" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Menu</a>
-				<a href="#gallery" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Gallery</a>
-				<a href="#contact-info" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Contact</a>
+			<div class="hidden md:flex space-x-6">
+				<a href="#menu" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl hover:underline decoration-black">Menu</a>
+				<a href="#gallery" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl hover:underline decoration-black">Gallery</a>
+				<a href="#contact-info" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl hover:underline decoration-black">Contact</a>
 			</div>
 		</div>
 		</nav>
@@ -43,6 +43,7 @@
 			</div>
 		</div>
 		<div id="menu" class="flex flex-col items-center justify-center align-center mt-6 ">
+		<div id="food-menu" class="flex flex-col md:flex-row md:ml-2 items-center justify-center align-center mt-6 ">
 			<div id="meat-dishes" clas="flex flex-col items-center justify-center align-center">
 				<img type="image/png" src="/static/images/icons8-steak-64.png" class="mx-auto mt-4" alt="meat-icon">
 				<h2 class="font-bold text-3xl mt-1 text-center">Meat Dishes</h2>
@@ -97,9 +98,11 @@
 				</div>
 				<p class="text-center font-light text-sm italic mt-1">Fava beans based soup with green chillies, tomatoes, onions, garlic, spiced habesha butter.</p> 
 			</div>
+			</div>
+
 			<div id="drinks" class="flex flex-col items-center">
 				<h2 class="font-bold text-3xl mt-3 text-center">Drinks</h2>
-				<div class="flex space-x-10">
+				<div class="flex flex-col md:flex-row space-x-10">
 					<div id="coffe-and-tea" class="flex flex-col items-center">
 						<img type="image/png" src="/static/images/icons8-coffee-24.png" class="mx-auto mt-4" alt="coffee-icon">
 						<h2 class="font-bold text-md mt-1 text-center">Coffee/Tea</h2>
@@ -142,29 +145,30 @@
 			</div>
 			</div>
 			<div id="gallery">
-				<h2 class="font-bold text-3xl mt-3 text-center">Gallery</h2>
+				<!-- <h2 id="gallery-title" class="font-bold text-3xl mt-3 text-center">Gallery</h2> -->
+				<!-- <div id="gallery-content"> -->
+				<!-- </div> -->
 			</div>
 		</main>
-	<footer id="contact-info" class="bg-veryPaleRedGray border-t border-brightRedLight">
-		<div class="flex flex-col justify-center items-center text-center content-center">
-			<!-- <li><h2 class="font-bold text-2xl m-y-3">Contact</h2></li> -->
-			<div class="flex content-evenly">
+	<footer id="contact-info" class="bg-veryPaleRedGray border-t border-brightRedLight mt-10">
+		<div class="flex flex-col justify-center items-center text-center content-center min-h-full">
+			<div class="flex flex-col md:flex-row content-evenly">
 				<div class="flex flex-col text-center">
-					<span class="hidden md:inline-block p-3 px-6 pt-2 rounded-full baseline pl-1">
+					<span class="inline-block p-3 px-6 pt-2 rounded-full baseline pl-1">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
 </svg>
 07365833630</span>
 				</div>
 				<div class="flex flex-col">
-<a href="https://www.google.com/maps/place/71+Alfreton+Rd,+Radford,+Nottingham+NG7+3NN" target="_blank" class="hidden md:inline-block p-3 px-6 pt-2 rounded-full baseline hover:text-brightRed hover:underline pl-1">
+<a href="https://www.google.com/maps/place/71+Alfreton+Rd,+Radford,+Nottingham+NG7+3NN" target="_blank" class="inline-block p-3 px-6 pt-2 rounded-full baseline hover:text-brightRed hover:underline pl-1">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
   <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
 </svg>
 71 Alfreton Road, NG7 3JL
 </a>
 				</div>
-<a href="mailto:habeshacaffe.notts@gmail.com" class="hidden md:inline-block p-3 px-6 pt-2 rounded-full baseline hover:text-brightRed hover:underline pl-1">
+<a href="mailto:habeshacaffe.notts@gmail.com" class="inline-block p-3 px-6 pt-2 rounded-full baseline hover:text-brightRed hover:underline pl-1">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
 </svg>
