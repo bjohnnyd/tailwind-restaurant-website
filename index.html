@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="http://fonts.cdnfonts.com/css/cerebri-sans" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 		<title>Manage Landing Page</title>
 	</head>
@@ -19,9 +20,9 @@
 			</div>
 			<!-- Menu Items -->
 			<div class="flex space-x-6">
-				<a href="#" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Menu</a>
-				<a href="#" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Gallery</a>
-				<a href="#" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Contact</a>
+				<a href="#menu" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Menu</a>
+				<a href="#gallery" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Gallery</a>
+				<a href="#contact" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl">Contact</a>
 			</div>
 		</div>
 		</nav>
@@ -29,16 +30,129 @@
 			<img class="w-screen h-200px md:h-[400px] lg:h-[600px]" src="./static/images/habesha-coffee-1.jpg"/>	
 		</section>
 		<div id="menu-overview" class="flex flex-col items-center justify-center mt-6 ">
-			<p class="italic text-sm font-light text-darkGrayishBlue">Skip to a Menu:</p>
-			<div class="flex space-x-6 font-bold">
-				<a href="#" class="text-brightRed underline decoration-solid hover:text-black">Meat Dishes</a>
-				<p> | </p>
-				<a href="#" class="text-brightRed underline decoration-solid hover:text-black">Vegan and Vegeterian Dishes</a>
-				<p> | </p>
-				<a href="#" class="text-brightRed underline decoration-solid hover:text-black">Drinks</a>
+			<p class="italic text-sm font-light text-darkBlue">Skip to A Menu:</p>
+			<div class="flex flex-col items-center space-x-6 font-bold mt-3 md:flex-row">
+				<a href="#meat-dishes" class="text-brightRed underline decoration-solid hover:text-black">Meat Dishes</a>
+				<p class="hidden md:block"> | </p>
+				<a href="#veggie-dishes" class="text-brightRed underline decoration-solid hover:text-black">Vegan and Vegeterian Dishes</a>
+				<p class="hidden md:block"> | </p>
+				<a href="#drinks" class="text-brightRed underline decoration-solid hover:text-black">Drinks</a>
 			</div>
 		</div>
+		<div id="menu" class="flex flex-col items-center justify-center mt-6 ">
+			<div id="meat-dishes" clas="flex flex-col items-center">
+				<i class="bg-meat mt-10 block center text-center">meat-icon</i>
+				<h2 class="font-bold text-3xl mt-3 text-center">Meat Dishes</h2>
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Tibs - £10</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Lean pieces lamb with tomatoes, spiced habesha butter, rosemary and garlic</p> 
+				<p class="text-center font-light text-sm italic">With your choice of spiciness.</p>
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Dulet - £8</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Mix of liver and stomach with garlic, habesha spiced butter, green chilli.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Kitfo - £10</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Fresh beef with spiced habesha butter with a side of habesha chilli mix.</p>
+				<p class="text-center font-light text-sm italic mt-1">Can be server raw or slightly cooked.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Kwanta Firfir - £10</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Dry meat with red chillie, garlic, rosemary, spiced haesha butter, tomatoes.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Misto - £10</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Lamb stew, with a choice of spicy or not.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Mahberawi - £13</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Mix of 3 meat and 3 vegeterian dishes.</p> 
+				</div>
+			<div id="veggie-dishes" clas="flex flex-col items-center">
+				<i class="bg-meat mt-10 block center text-center">veggie-icon</i>
+				<h2 class="font-bold text-3xl mt-3 text-center">Vegeterian and Vegan Dishes</h2>
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Shiro - £7</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Healty chickpea-based veggie soup with traditional habesha spices.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Beyanetu/Veggie Mix - £12</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">A selection of veggie dishes including shiro, beetroot, mixed salad, kale, chickpea, green beans, green/red/yellow lentils.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Nayxom Firfir - £8 Ⓥ</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Vegan version of Kwanta firfir without butter and meat.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Fata - £7 Ⓥ</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Base of onions, tomatoe, garlic, red pepper mixed with bread.</p> 
+				<div class="text-center">
+					<h3 class="uppercase font-bold bg-strongRed text-1xl mt-3 p-1 inline-block">Fuul - £7 Ⓥ</h2>
+				</div>
+				<p class="text-center font-light text-sm italic mt-1">Fava beans based soup with green chillies, tomatoes, onions, garlic, spiced habesha butter.</p> 
+			</div>
+			<div id="drinks" class="flex flex-col items-center">
+				<h2 class="font-bold text-3xl mt-3 text-center">Drinks</h2>
+				<div class="flex space-x-10">
+					<div id="coffe-and-tea" class="flex flex-col items-center">
+						<h2 class="font-bold text-md mt-3 text-center">Coffee/Tea</h2>
+						<div class="text-center">
+							<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Family Coffe - £7</h2>
+							<p class="text-center font-light text-sm italic mt-1">Traditional coffe ceremony with popcorn.</p> 
+							<h1 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Single Habesha Coffee - £1</h2>
+							<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Tea - £1.50</h2>
+							<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Black Coffe - £2</h2>
+							<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Latte - £2.50</h2>
+							<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Cappuccino - £2.50</h2>
+							<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Macchiato - £2</h2>
+						</div>
+					</div>
+					<div id="soft-drinks" class="flex flex-col">
+						<div class="text-center">
+						<h2 class="font-bold text-md mt-3 text-center">Soft Drinks</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Water - £1</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Pepsi/Diet Pepsi - £1</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Coke/Diet Coke - £1</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Fanta/Tango - £1</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Mango/Guave/Orange Juice - £1</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Orange + Passion Fruit Juice - £1</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Fresh Orange+Banana+Avocado+Milk Juice - £3</h2>
+						</div>
+					</div>
+					<div id="alcoholic-drinks" class="flex flex-col">
+						<div class="text-center">
+						<h2 class="font-bold text-md mt-3 text-center">Alcoholic Drinks</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Asmara/Walia Habesha Beer - £3</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Heineken - £2.50</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Budweiser - £2</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Araki - £3</h2>
+							<p class="text-center font-light text-sm italic mt-1">Traditional spirit.</p> 
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div id="gallery">
+				<h2 class="font-bold text-3xl mt-3 text-center">Gallery</h2>
+			</div>
 	</body>
+	<footer>
+		<h2 class="font-bold text-3xl mt-3">Contact</h2>
+		<div class="flex flex-col space-y-10 mt-10 ml-0">
+			<div class="text-center">
+			<a class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline">Tel: 00000000</a>
+			</div>
+			<div class="text-center">
+			<a class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline">Address: 00000000</a>
+			</div>
+			<div class="text-center">
+			<a href="mailto:habeshacaffe.notts@gmail.com" class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Email: habeshacaffe.notts@gmail.com</a>
+			</div>
+		</div>
+	</footer>
 	
 </html>
 

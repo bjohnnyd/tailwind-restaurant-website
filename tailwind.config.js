@@ -9,10 +9,14 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      backgroundImage: {
+        meat: "url('/static/images/meat.png')",
+      },
       colors: {
         greyBackground: "#FCEEE1",
         yellowTheme: "#FFF46B",
         greenTheme: "#EE6B5E",
+        strongRed: "#F07363",
         brightRed: "hsl(12, 88%, 59%)",
         brightRedLight: "hsl(12, 88%, 69%)",
         brightRedSupLight: "hsl(12, 88%, 95%)",
