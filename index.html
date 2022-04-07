@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/index.min.js"></script>
 		<link href="http://fonts.cdnfonts.com/css/cerebri-sans" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
@@ -17,20 +18,20 @@
 		<div class="flex items-center text-center content-center md:justify-between">
 			<!-- Logo -->
 			<div class="ml-1">
-				<h2 class="tracking-widest text-2xl text-greenTheme font-bold md:text-3xl">HABESHA CAFFEE</h2>
+				<h2 class="tracking-widest text-2xl text-brightRed font-bold md:text-3xl">HABESHA CAFFEE</h2>
 			</div>
 			<!-- Menu Items -->
 			<div class="hidden md:flex space-x-6">
-				<a href="#menu" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl hover:underline decoration-black">Menu</a>
-				<a href="#gallery" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl hover:underline decoration-black">Gallery</a>
-				<a href="#contact-info" class="uppercase text-greenTheme hover:text-brightRedLight text-3xl hover:underline decoration-black">Contact</a>
+				<a href="#menu" class="uppercase text-greenTheme hover:text-brightRed text-3xl hover:underline decoration-black">Menu</a>
+				<a href="#gallery" class="uppercase text-greenTheme hover:text-brightRed text-3xl hover:underline decoration-black">Gallery</a>
+				<a href="#contact-info" class="uppercase text-greenTheme hover:text-brightRed text-3xl hover:underline decoration-black">Contact</a>
 			</div>
 		</div>
 		</nav>
 		</header>
 		<main class="flex-grow">
 		<section id="hero" class="text-center font-light object-cover">
-			<img class="w-screen h-200px md:h-[400px] lg:h-[500px]" src="./static/images/habesha-coffee-1.jpg"/>	
+			<img class="w-screen h-200px md:h-[300px] lg:h-[550px]" src="./static/images/habesha-coffee-1.jpg"/>	
 		</section>
 		<div id="menu-overview" class="flex flex-col items-center justify-center mt-6 ">
 			<p class="italic text-sm font-light text-darkBlue">Skip to A Menu:</p>
@@ -127,7 +128,7 @@
 						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Fanta/Tango - £1</h2>
 						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Mango/Guave/Orange Juice - £1</h2>
 						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Orange + Passion Fruit Juice - £1</h2>
-						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block">Fresh Orange+Banana+Avocado+Milk Juice - £3</h2>
+						<h2 class="uppercase font-bold bg-strongRed text-md mt-3 p-1 inline-block p-0 m-2">Fresh Banana+Avocado+Orange Juice - £3</h2>
 						</div>
 					</div>
 					<div id="alcoholic-drinks" class="flex flex-col">
@@ -145,23 +146,82 @@
 			</div>
 			</div>
 			<div id="gallery">
-				<!-- <h2 id="gallery-title" class="font-bold text-3xl mt-3 text-center">Gallery</h2> -->
-				<!-- <div id="gallery-content"> -->
-				<!-- </div> -->
+				<h2 id="gallery-title" class="font-bold text-3xl mt-3 text-center">Gallery</h2>
+<div id="carouselExampleCaptions" class="carousel slide relative border-solid border-2 border-black mt-4 mx-auto h-1/2 w-1/2" data-bs-ride="carousel">
+  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+  </div>
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <div class="carousel-item active relative float-left w-full">
+      <img
+        src="static/images/carousel/bread-with-butter.jpg"
+        class="block w-auto"
+        alt="Breakfast with Yoghurt"
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">Food with Yoghurt</h5>
+        <p>A common breakfast...</p>
+      </div>
+    </div>
+    <div class="carousel-item relative float-left w-full">
+      <img
+        src="static/images/carousel/breakfast.jpg"
+        class="block w-auto"
+        alt="Breakfast"
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">Without Yoghurt</h5>
+        <p>Another common breakfast...</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 			</div>
 		</main>
 	<footer id="contact-info" class="bg-veryPaleRedGray border-t border-brightRedLight mt-10">
 		<div class="flex flex-col justify-center items-center text-center content-center min-h-full">
 			<div class="flex flex-col md:flex-row content-evenly">
 				<div class="flex flex-col text-center">
-					<span class="inline-block p-3 px-6 pt-2 rounded-full baseline pl-1">
+<a href="tel:07365833630" class="inline-block p-3 px-6 pt-2 rounded-full baseline hover:text-brightRed hover:underline pl-1">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
 </svg>
-07365833630</span>
+07365833630
+</a>
 				</div>
 				<div class="flex flex-col">
-<a href="https://www.google.com/maps/place/71+Alfreton+Rd,+Radford,+Nottingham+NG7+3NN" target="_blank" class="inline-block p-3 px-6 pt-2 rounded-full baseline hover:text-brightRed hover:underline pl-1">
+<a href="https://maps.google.com/?daddr=71+Alfreton+Rd,+Radford,+Nottingham+NG7+3NN" target="_blank" class="inline-block p-3 px-6 pt-2 rounded-full baseline hover:text-brightRed hover:underline pl-1">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
   <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
 </svg>
@@ -177,6 +237,5 @@ habeshacaffe.notts@gmail.com</a>
 			</div>
 	</footer>
 	</body>
-	
 </html>
 
