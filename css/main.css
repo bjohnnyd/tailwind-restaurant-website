@@ -1812,19 +1812,29 @@ html {
   border-color: hsl(12 88% 69% / var(--tw-border-opacity));
 }
 
-.bg-greyBackground {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 238 225 / var(--tw-bg-opacity));
-}
-
 .bg-yellowTheme {
   --tw-bg-opacity: 1;
   background-color: rgb(255 244 107 / var(--tw-bg-opacity));
 }
 
+.bg-grayBackground {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 238 225 / var(--tw-bg-opacity));
+}
+
 .bg-strongRed {
   --tw-bg-opacity: 1;
   background-color: rgb(240 115 99 / var(--tw-bg-opacity));
+}
+
+.bg-veryLightGray {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+}
+
+.bg-darkGrayishBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(227 12% 61% / var(--tw-bg-opacity));
 }
 
 .bg-no-repeat {

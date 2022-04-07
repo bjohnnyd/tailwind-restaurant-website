@@ -13,7 +13,7 @@ module.exports = {
         meat: "url('/static/images/meat.png')",
       },
       colors: {
-        greyBackground: "#FCEEE1",
+        grayBackground: "#FCEEE1",
         yellowTheme: "#FFF46B",
         greenTheme: "#EE6B5E",
         strongRed: "#F07363",
