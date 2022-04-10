@@ -1812,29 +1812,19 @@ html {
   border-color: hsl(12 88% 69% / var(--tw-border-opacity));
 }
 
-.bg-yellowTheme {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 244 107 / var(--tw-bg-opacity));
-}
-
 .bg-grayBackground {
   --tw-bg-opacity: 1;
   background-color: rgb(252 238 225 / var(--tw-bg-opacity));
 }
 
+.bg-yellowTheme {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 244 107 / var(--tw-bg-opacity));
+}
+
 .bg-strongRed {
   --tw-bg-opacity: 1;
   background-color: rgb(240 115 99 / var(--tw-bg-opacity));
-}
-
-.bg-veryLightGray {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
-}
-
-.bg-darkGrayishBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(227 12% 61% / var(--tw-bg-opacity));
 }
 
 .bg-no-repeat {
@@ -1994,6 +1984,24 @@ html {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 480px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:self-center {
+    align-self: center;
+  }
 }
 
 @media (min-width: 760px) {
